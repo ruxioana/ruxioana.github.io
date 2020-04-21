@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    display: flex;
+    flex-direction: column; /* pentru ca elementele sa vina unul sub celalalt */
+    align-items: center;
+    justify-content: center;
+    font-family: 'Baloo 2';
+    font-size: 4em; /* daca setam aici dublu, jos in table, se va dubla automat, pentru ca este copilul acestuia */
+    height: 100vh; /* pentru ca nu erau centrate */
+}
+.table {
+    display: grid;
+    grid-template-columns: 2em 2em 2em;
+    grid-template-rows: 2em 2em 2em;
+    --border: 3px solid cadetblue; /* este o variabila pe care o vom seta in functie de nevoi */
+}
+.table div {
+    /* border-color: cadetblue;
+    border-width: 2px;
+    border-style: solid; */ /* am scos bordurile de aici, pentru ca vom scrie individual pentru fiecare celula */
+    text-align: center;
+    font-size: 1.5em;
+    -webkit-user-select: none; /* e bine sa nu lasam sa se poata face selectia cand facem jocuri; de obicei se scrie fara webkit, dar in edge nu preia comanda */
+}
+.table div:nth-child(1), .table div:nth-child(3), .table div:nth-child(4), .table div:nth-child(6) {
+    border-bottom: var(--border);
+}
+.table div:nth-child(2), .table div:nth-child(5) {
+    border-left: var(--border);
+    border-right: var(--border);
+    border-bottom: var(--border);
+}
+.table div:nth-child(8) {
+    border-left: var(--border);
+    border-right: var(--border);
+}
+.x {
+    color: darkolivegreen;
+}
+.o {
+    color: coral;
+}
+.end {
+    visibility: hidden;
+}
+.visible {
+    visibility: visible;
+}

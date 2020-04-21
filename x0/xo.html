@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XO</title>
+    <link rel="stylesheet" href="xo.css">
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+    <script src="xo.js" defer></script>
+</head>
+<body>
+    <div id="app">
+        <div class="table">
+            <div v-for="(symbol, index) in table" v-on: click="makeMove(index)">
+                {{ symbol }}
+            </div>
+        </div>
+        <div class="end" v-if="finished">You win!</div>
+    </div>
+</body>
+</html>
