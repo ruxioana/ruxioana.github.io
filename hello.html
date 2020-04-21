@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello VUE</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="hello.js" defer></script>
+</head>
+<body>
+    <div id="app"> <!-- ca sa stim ca in acest div va lucra aplicatia noastra VUE -->
+        <hello></hello> <!-- putem crea un tag nou si il putem parametriza cu clase si altele -->
+        <span v-if="show" v-bind:title="title"> <!-- pentru a putea pune titlul dinamic -->
+            {{ message }}
+        </span> <!-- framework-ul ca inlocui acest mesaj cu o valoare: inlocuieste-mi ce este intre cele doua acolade cu valoarea pe care o voi da in js -->
+        <ol>
+            <li v-for="todo in todos"> <!-- ia fiecare element todo din todos si il afiseaza mai jos -->
+                {{ todo }}
+            </li>
+        </ol>
+        <button v-on:click="reverse">Reverse message</button> <!-- evenimentul care se intampla atunci cand dai click -->
+        <input type="text" v-model="message"> <!-- this is the two binging way: ne va aparea un input in care este scris mesajul nostru, iar daca il modificam, se va modifica si mai sus mesajul automat -->
+    </div>
+</body>
+</html>
