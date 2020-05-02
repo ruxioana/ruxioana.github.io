@@ -5,7 +5,7 @@
 }
 body {
     font-family: sans-serif;
-    --my-color: rgb(203, 113, 48); /* asta este o variablia ca sa nu folosim aceeasi culoare de 10000 de ori, si daca vrei sa o schimbi sa le schimbi pe toate, ci doar aici o data */
+    --my-color: rgb(66, 114, 153); /* asta este o variablia ca sa nu folosim aceeasi culoare de 10000 de ori, si daca vrei sa o schimbi sa le schimbi pe toate, ci doar aici o data */
 }
 nav {
     background-color: var(--my-color);
@@ -23,19 +23,19 @@ nav li:first-child {
     font-size: 1.2em;
 }
 #home {
-    background-image: url(https://raw.githubusercontent.com/miezuit/html_css_training/master/images/headerback.jpg);
+    background-image: url('porto_bakg.jpg');
     height: 100vh; /* vh = view height - este raportat la fereastra */
     background-repeat: no-repeat;
     background-size: cover;
 }
 #overlay {
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.6);
     height: 100%;
 }
 #container {
     position: absolute;
     width: 55%;
-    height: 25%;
+    height: 35%;
     top: 0;
     left: 0;
     right: 0;
@@ -48,7 +48,7 @@ h1 {
 }
 #home p {
     font-size: 1.3em;
-    color: rgb(85, 85, 85);
+    color: rgb(65, 65, 65);
     font-family: "DIN Alternate";
     width: 60%;
     padding: 1em 0;
