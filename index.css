@@ -7,6 +7,10 @@ body {
     font-family: sans-serif;
     --my-color: rgb(66, 114, 153); /* asta este o variablia ca sa nu folosim aceeasi culoare de 10000 de ori, si daca vrei sa o schimbi sa le schimbi pe toate, ci doar aici o data */
 }
+header {
+    position: fixed;
+    width: 100%;
+}
 nav {
     background-color: var(--my-color);
     text-align: right;
@@ -24,6 +28,7 @@ nav li:first-child {
 }
 #home {
     background-image: url('porto_bakg.jpg');
+    background-attachment: fixed;
     height: 100vh; /* vh = view height - este raportat la fereastra */
     background-repeat: no-repeat;
     background-size: cover;
