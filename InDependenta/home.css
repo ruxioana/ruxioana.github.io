@@ -26,13 +26,14 @@ header {
     padding: 1.5em 0;
     width: 100%;
     font-family: 'Noto Sans', sans-serif;
-    z-index: 100;
+    z-index: 500;
 }
 
 .logo {
     display: flex; /* pentru ca "InDependenta" sa nu stea dedesubtul logo-ului */
     align-items: center;
     margin-left: 0.5em;
+    z-index: 10;
 }
 .name {
     font-size: 1.8em;
