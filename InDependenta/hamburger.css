@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+.hamburger { /* partea pentru mobile view */
+    background-image: url('img/hamburger.png');
+    background-size: cover;
+    height: 3em;
+    width: 3em;
+    cursor: pointer;
+}
+.menu {
+    display: block; /* for mobile */
+    user-select: none; /* ca sa nu poata fi selectat nimic din meniu */
+    position: absolute; /* for mobile */
+    top: -10em; /* for mobile */
+    left: 0; /* for mobile */
+    width: 100%; /* for mobile, ca sa fie pe toata lungimea (pe mijloc) */
+    background-color: white; /* for mobile */
+    opacity: 0.9; /* for mobile */
+    padding-bottom: 0.5em; /* for mobile */
+    transition-duration: 0.5s; /* for mobile, atunci cand va deveni vizibil */
+}
+.menu.visible { /* for mobile, ce se intampla cand menu este in clasa visible, adica atunci cand apasam pe butonul de meniu pe telefon */
+    top: 4.5em;
+}
+.menu ul {
+    display: flex;
+    flex-direction: column; /* strict pentru mobile */
+    align-items: center;
+    justify-content: center;
+}
+.menu li {
+    display: block; /* pentru ca puntuletele din li sa dispara */
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1.4em;
+    font-weight: bold;
+    padding-left: 1em; /* punem spatiu la stanga pentru fiecare element, pentru ca elementele din bara de meniu nu sunt lipite unul de celalalt */
+}
+.menu li a {
+    text-decoration: none; /* ca sa nu mai fie link-ul subliniat */
+    color: black;
+}
+
+@media only screen and (min-width: 768px) { /* breakpoint: pentru ecranele care au minim 768px vom suprascrie regulile de mai sus pentru afisarea pe desktop, pentru ca pana acum am facut doar mobile first */
+    .hamburger {
+        display: none;
+    }
+    .menu {
+        position: static; /* static ne ajuta cand vrem ca meniul sa arate normal */
+        opacity: 1;
+        width: initial;
+        background-color: none;
+    }
+    .menu ul {
+        flex-direction: row;
+    }
+    .menu li a::after {
+        content: '\2022';
+        padding: 1em;
+        color: var(--blue-color);
+    }
+    .menu li:last-child a::after {
+        content: '';
+    }
+}
