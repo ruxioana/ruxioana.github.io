@@ -47,7 +47,7 @@ header {
 
 li {
     display: inline-block;
-    padding: 0.5em;
+    padding: 0.5em 1em;
 }
 
 a {
@@ -56,7 +56,6 @@ a {
     font-size: 1.2em;
     font-family: sans-serif;
     text-align: center;
-    margin-left: 0.3em;
     position: relative;
     cursor: pointer;
 }
