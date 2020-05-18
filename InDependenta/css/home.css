@@ -14,6 +14,9 @@ body {
     --blue-color: #6b99be;
     --orange-color: #f6af33;
     --indigo-color: #9683ec;
+    --green-color: #4efc8e;
+    --red-color: #ff5757;
+    font-family: 'Noto Sans', sans-serif;
 }
 
 header {
@@ -22,10 +25,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--indigo-color);
-    padding: 1.5em 0;
+    background-color: var(--blue-color);
+    padding: 1.3em 0;
     width: 100%;
-    font-family: 'Noto Sans', sans-serif;
     z-index: 500;
 }
 
@@ -41,34 +43,48 @@ header {
 }
 
 .background {
-    background-image: url(img/hands.jpg);
+    background-image: url(../img/voluntary.png);
     background-size: cover;
     background-attachment: fixed;
     opacity: 0.6;
-    height: 100vh;
-    width: 100vw;
+    height: 85vh;
 }
 
-.text {
+.intro {
     position: absolute;
     width: 55%;
-    height: 25%;
+    height: 40%;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     margin: auto;
-    font-family: 'Noto Sans', sans-serif;
     font-size: 1.7em;
 }
 
 input[type="button"] {
-    background-color: var(--indigo-color);
+    background-color: var(--green-color);
     color: black;
     font-size: 0.8em;
     border-style: none;
     border-radius: 5px;
     padding: 0.3em;
     margin-top: 0.8em;
+    cursor: pointer;
 }
 
+article {
+    padding: 1em 3em;
+}
+
+h1 {
+    margin-bottom: 0.3em;
+}
+
+.activities {
+    margin-top: 0.3em;
+}
+
+.activities li, .localitati li {
+    display: block;
+}

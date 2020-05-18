@@ -16,7 +16,7 @@
     top: -20em; 
     left: 0; 
     width: 100%; 
-    background-color: #9683ec; 
+    background-color: #6b99be; 
     padding-bottom: 0.5em; 
     transition-duration: 0.5s;
     z-index: -1;
@@ -52,7 +52,7 @@ a {
     cursor: pointer;
 }
 
-a::after {
+li a::after {
     content: '';
     display: block;
     position: absolute;
@@ -64,7 +64,7 @@ a::after {
     transition-duration: 0.5s;
 }
 
-a:hover::after {
+li a:hover::after {
     width: 100%;
     background-color: black;
 }
