@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    --blue-color: #6b99be;
+    --orange-color: #f6af33;
+    --indigo-color: #9683ec;
+    --green-color: #4efc8e;
+    --red-color: #ff5757;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.cefacem {
+    background-color: #f6af33c5;
+    width: 80vw;
+    border-radius: 30px;
+    margin-left: 15em;
+    margin-top: 0.2em;
+    /* margin-top: 5em; atat ar trebui sa fie distanta la header ca sa se vada textul dedesubt */
+}
+
+.cefacem h1, .cefacem p, .localitati{
+    padding-top: 1em;
+}
