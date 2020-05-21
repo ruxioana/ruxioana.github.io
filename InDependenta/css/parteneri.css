@@ -19,8 +19,8 @@ body {
     font-family: 'Noto Sans', sans-serif;
 }
 
-.cine {
-    background-color: #4efc8ec5;
+.parteneri {
+    background-color: #9683ecc5;
     width: 80vw;
     border-radius: 30px;
     margin-left: 15em;
@@ -28,6 +28,10 @@ body {
     /* margin-top: 5em; atat ar trebui sa fie distanta la header ca sa se vada textul dedesubt */
 }
 
-.cine h1, .cine p{
+.parteneri h1 {
     padding-top: 1em;
+}
+
+.parteneri li {
+    display: block;
 }
