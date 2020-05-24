@@ -52,7 +52,7 @@ a {
     cursor: pointer;
 }
 
-li a::after {
+.menu ul li a::after {
     content: '';
     display: block;
     position: absolute;
@@ -64,7 +64,7 @@ li a::after {
     transition-duration: 0.5s;
 }
 
-li a:hover::after {
+.menu ul li a:hover::after {
     width: 100%;
     background-color: black;
 }

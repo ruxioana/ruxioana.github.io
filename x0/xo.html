@@ -14,12 +14,14 @@
 </head>
 <body>
     <div id="app">
+        <div class="end" id="quote"></div> <!-- v-if="finished" -->
         <div class="table">
             <div v-for="(symbol, index) in table" v-on: click="makeMove(index)">
                 {{ symbol }}
             </div>
         </div>
-        <div class="end" v-if="finished">You win!</div>
     </div>
+
+    <a href="../InDependenta/home.html"><input type="button" value="Înapoi"></a>
 </body>
 </html>
