@@ -32,6 +32,10 @@ body {
     padding-top: 1em;
 }
 
+.despre ul li {
+    display: block;
+}
+
 .despre ul li a {
     font-size: 1em;
 }

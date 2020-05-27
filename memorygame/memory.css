@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    text-align: center; /* pentru ca butonul si h1 sa fie pe centru */
+}
+input[type=button] {
+    background-color: cornflowerblue;
+    color: whitesmoke;
+    font-size: 1.3em;
+    padding: 0.5em;
+    border-radius: 10%;
+    margin-top: 15px; /* sau putem scrie maargin: 15px 0 ca sa avem top si bottom */
+    margin-bottom: 15px;
+    text-transform: uppercase; /* ca sa fie tot textul scris cu litere mari */
+}
+li {
+    display: inline-block;
+    height: 100px;
+    width: 100px; /* pentru ca aceleasi dimensiuni sunt si pentru imaginile mici cu animale */
+    background-image: url(https://www.toptal.com/designers/subtlepatterns/patterns/wild_oliva.png);
+    border-radius: 10px;
+    margin: 3px;
+}
+img {
+    visibility: hidden; /* am ascuns imaginile */
+}
