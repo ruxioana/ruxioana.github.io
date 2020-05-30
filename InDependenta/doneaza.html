@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donează</title>
+    <link rel="stylesheet" href="css/doneaza.css">
+    <link rel="stylesheet" href="css/hamburger.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <div><img src="" alt="logo"></div>
+            <div class="name">InDependenţa</div>
+        </div>
+        <div class="hamburger"></div>
+        <nav class="menu">
+            <ul>
+                <li><a href="home.html#cine">Cine suntem</a></li>
+                <li><a href="home.html#membri">Membri</a></li>
+                <li><a href="home.html#parteneri">Parteneri</a></li>
+                <li><a href="home.html#cefacem">Ce facem</a></li>
+                <li><a href="home.html#contact">Contact</a></li>                
+            </ul>
+        </nav>
+    </header>
+
+    <h1>Donaţii pentru fondul de urgenţă</h1>
+
+    <div class="doneaza" id="doneaza">
+        <h2>Detalii</h2>
+        <form action="/InDependenta/doneaza.html">
+            <label for="prenume">Prenume</label>
+            <input type="text" name="prenume" id="prenume" placeholder="Prenume...">
+
+            <label for="numef">Nume</label>
+            <input type="text" name="nume" id="nume" placeholder="Nume...">
+
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" placeholder="exemplu@exemplu.ro">
+
+            <label for="adresa">Adresă</label>
+            <input type="text" name="adresa" id="adresa" placeholder="Adresa...">
+
+            <label for="tara">Ţară</label>
+            <select name="tara" id="tara">
+                <option value="select">Selectaţi o ţară</option>
+                <option value="romania">România</option>
+                <option value="usa">USA</option>
+            </select>
+
+            <label for="oras">Oraş</label>
+            <input type="text" name="oras" id="oras" placeholder="Oraşul...">
+
+            <label for="codpostal">Cod poştal</label>
+            <input type="text" name="codpostal" id="codpostal" placeholder="Codul poştal...">
+
+            <label for="telefon">Număr de telefon</label>
+            <input type="text" name="telefon" id="telefon" placeholder="Vă rugăm să includeţi şi prefixul dacă este necesar.">
+
+            <h3>Informaţii despre plată</h3>
+
+            <div class="plata">Modalitatea de plată</div>
+            <input type="radio" name="card" value="Card de credit/debit">
+            <label for="card">Card de credit/debit</label>
+
+            <input type="submit" value="Donează acum">
+        </form>
+    </div>
+</body>
+</html>
