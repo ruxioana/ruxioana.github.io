@@ -12,6 +12,7 @@ body {
     font-family: 'Baloo 2';
     font-size: 4em; /* daca setam aici dublu, jos in table, se va dubla automat, pentru ca este copilul acestuia */
     height: 100vh; /* pentru ca nu erau centrate */
+    background-color: #ffff80;
 }
 .table {
     display: grid;
@@ -70,7 +71,8 @@ input[type="button"] {
     font-size: 0.3em;
     border-style: none;
     border-radius: 5px;
-    padding: 0.3em;
+    padding: 0.5em;
     margin-bottom: 2em;
+    margin: 15px 0;
     cursor: pointer;
 }

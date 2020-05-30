@@ -16,6 +16,7 @@ body {
     --indigo-color: #9683ec;
     --green-color: #4efc8e;
     --red-color: #ff5757;
+    --yellow-color: #ffff80;
     font-family: 'Noto Sans', sans-serif;
 }
 
@@ -85,7 +86,7 @@ input[type="button"] {
     font-size: 0.8em;
     border-style: none;
     border-radius: 5px;
-    padding: 0.3em;
+    padding: 0.5em;
     margin-top: 0.8em;
     cursor: pointer;
 }
