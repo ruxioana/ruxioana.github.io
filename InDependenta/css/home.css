@@ -80,7 +80,7 @@ p a {
     font-size: 1.7em;
 }
 
-input[type="button"] {
+.intro input[type="button"] {
     background-color: var(--green-color);
     color: black;
     font-size: 0.8em;
@@ -105,4 +105,18 @@ h1 {
 
 .activities li, .localitati li {
     display: block;
+}
+
+.doneazabtn input[type="button"] {
+    background-color: var(--blue-color);
+    color: black;
+    font-size: 1.3em;
+    border-style: none;
+    border-radius: 5px;
+    padding: 0.5em;
+    margin-top: 0.8em;
+    cursor: pointer;
+    position: fixed;
+    bottom: 0.8em;
+    left: 0.8em;
 }
