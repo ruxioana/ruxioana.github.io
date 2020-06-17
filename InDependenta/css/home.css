@@ -48,7 +48,7 @@ header {
     background-size: cover;
     background-attachment: fixed;
     opacity: 0.6;
-    height: 85vh;
+    height: 92.5vh;
 }
 
 p a {
@@ -59,13 +59,13 @@ p a {
 .sidemenu ul {
     position: fixed;
     width: 15%;
-    height: 57%;
     top: 13.5%;
     font-size: 1.2em;
     background-color: var(--red-color);
     padding-top: 2.5%;
     padding-left: 1.6%;
-    height: 71.5vh;
+    height: 79vh;
+    z-index: 100;
 }
 
 .intro {
@@ -105,18 +105,4 @@ h1 {
 
 .activities li, .localitati li {
     display: block;
-}
-
-.doneazabtn input[type="button"] {
-    background-color: var(--blue-color);
-    color: black;
-    font-size: 1.3em;
-    border-style: none;
-    border-radius: 5px;
-    padding: 0.5em;
-    margin-top: 0.8em;
-    cursor: pointer;
-    position: fixed;
-    bottom: 0.8em;
-    left: 0.8em;
 }

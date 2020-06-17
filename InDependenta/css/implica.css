@@ -16,18 +16,79 @@ body {
     --indigo-color: #9683ec;
     --green-color: #4efc8e;
     --red-color: #ff5757;
+    --yellow-color: #ffff80;
     font-family: 'Noto Sans', sans-serif;
 }
 
-.implica {
-    background-color: #4efc8ec5;
-    width: 80vw;
-    border-radius: 30px;
-    margin-left: 15em;
-    margin-top: 0.2em;
-    /* margin-top: 5em; atat ar trebui sa fie distanta la header ca sa se vada textul dedesubt */
+header {
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--blue-color);
+    padding: 1.3em 0;
+    width: 100%;
+    z-index: 500;
 }
 
-.implica h1 {
+.logo {
+    display: flex; /* pentru ca "InDependenta" sa nu stea dedesubtul logo-ului */
+    align-items: center;
+    margin-left: 0.5em;
+    z-index: 10;
+}
+.name {
+    font-size: 1.8em;
+    margin-left: 0.3em;
+}
+
+p a {
+    font-size: 1em;
+    color: var(--red-color);
+}
+
+.sidemenu ul {
+    position: fixed;
+    width: 15%;
+    top: 13.5%;
+    font-size: 1.2em;
+    background-color: var(--red-color);
+    padding-top: 2.5%;
+    padding-left: 1.6%;
+    height: 79vh;
+    z-index: 100;
+}
+
+article {
+    position: relative;
+    left: 15%;
+    top: 5.5em;
+    margin-left: 2.5em;
+}
+
+.person, .company {
+    background-color: #9683ecc5;
+    width: 80vw;
+    border-radius: 30px;
+    padding: 2.5em;
+}
+
+.company {
+    margin-top: 0.3em;
+}
+
+.linie {
+    height: 5px;
+    background-color: var(--red-color);
+    border-radius: 3px;
+    width: 20em;
+}
+
+h3 {
     padding: 1em 0;
+}
+
+p {
+    padding-bottom: 1em;
 }

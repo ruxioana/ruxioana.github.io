@@ -10,13 +10,11 @@ body {
     text-align: center; /* pentru ca butonul si h1 sa fie pe centru */
     background-color: #ffff80;
 }
-
 h1 {
     font-family: 'Noto Sans', sans-serif;
     padding: 1.5em;
     color: black;
 }
-
 input[type=button] {
     background-color: #6b99be;
     color: black;
@@ -28,7 +26,6 @@ input[type=button] {
     text-transform: uppercase; /* ca sa fie tot textul scris cu litere mari */
     cursor: pointer;
 }
-
 li {
     display: inline-block;
     height: 100px;
@@ -37,7 +34,6 @@ li {
     border-radius: 10px;
     margin: 3px;
 }
-
 img {
     visibility: hidden; /* am ascuns imaginile */
 }

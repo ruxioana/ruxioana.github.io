@@ -23,7 +23,7 @@ let i;
 let content = ''; /* asa se defineste gol */
 for(i = 0; i < images.length; i++) {
     let html = "<li><img src='" + images[i] + "'></li>"; /* punem imaginile in html */
-    // let html = `<li><img src="${images[i]}"></li>`; /* asta se cheama interpolare si e o alta varianta de a scrie ce e mais us */
+    // let html = `<li><img src="${images[i]}"></li>`; /* asta se cheama interpolare si e o alta varianta de a scrie ce e mai sus */
     content += html;
 }
 document.querySelector('ul').innerHTML = content; /* am legat li-urile de html-ul nostru - am creat dinamic lista */
