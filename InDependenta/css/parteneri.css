@@ -35,3 +35,7 @@ body {
 .parteneri li {
     display: block;
 }
+
+.parteneri ul li a {
+    font-size: 1em;
+}

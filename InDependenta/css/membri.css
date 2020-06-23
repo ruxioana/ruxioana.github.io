@@ -25,6 +25,7 @@ body {
     border-radius: 30px;
     margin-left: 15em;
     margin-top: 0.2em;
+    display: block;
 }
 
 .membri h1 {
@@ -34,4 +35,22 @@ body {
 
 .membri div {
     padding-bottom: 0.7em;
+}
+
+.card {
+    margin: auto;
+    display: inline-block;
+}
+
+.card1, .card2 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 250px;
+    text-align: center;
+    display: inline-block;
+    margin-right: 5em;
+}
+  
+.title {
+    color: grey;
+    font-size: 18px;
 }

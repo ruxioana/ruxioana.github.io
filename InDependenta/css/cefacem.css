@@ -31,3 +31,7 @@ body {
 .cefacem h1, .cefacem p, .localitati{
     padding-top: 1em;
 }
+
+.localitati {
+    font-size: 0.9em;
+}
